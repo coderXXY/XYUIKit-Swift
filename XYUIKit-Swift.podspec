@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   对基础控件进行封装，方便快速便捷创建UI。平时项目中经常使用到的基础UI或者工具，为了方便自己与大家，一起来管理吧。。。join us！👍👍👍 Encapsulate basic controls for quick and easy UI creation. Usually used in the project of the basic UI, in order to facilitate their own and everyone, together to manage it... Join us!
                        DESC
 
-  s.homepage         = 'https://github.com/s.requires_arc = true/XYUIKit-Swift'
+  s.homepage         = 'https://github.com/CoderXXY/XYUIKit-Swift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'coderXXY' => 'coderxxy@163.com' }
