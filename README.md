@@ -10,16 +10,17 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ```
+You should import XYUIKit_Swift in your file.
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-//        UIColor.xy.hexStringToColor(hexString: <#T##String#>, alpha: <#T##CGFloat#>)
-//        XYUILable.init(frame: <#T##CGRect#>)
-//        var lable:XYUILable = XYUILable.init(frame: <#T##CGRect#>, title: <#T##String?#>, bgColor: <#T##UIColor?#>, fontValue: <#T##CGFloat?#>, textColor: <#T##UIColor?#>)
+//        UIColor.xy.hexStringToColor(hexString: String, alpha: CGFloat)
+//        XYUILable.init(frame: CGRect)
+//        var lable:XYUILable = XYUILable.init(frame: CGRect, title: String?, bgColor: UIColor?, fontValue: CGFloat?, textColor: UIColor?)
 //        UIColor.xy.titaniumColor
-//        UIColor.xy.hexStringToColor(hexString: <#T##String#>)
+//        UIColor.xy.hexStringToColor(hexString: String)
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,6 +34,11 @@ class ViewController: UIViewController {
 ```
 
 ## Requirements
+
+```
+s.ios.deployment_target = '9.0'
+
+```
 
 ## Installation
 
