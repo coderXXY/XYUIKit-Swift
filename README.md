@@ -1,6 +1,6 @@
 # XYUIKit-Swift
 
-[![CI Status](https://img.shields.io/travis/JasonDraem/XYUIKit-Swift.svg?style=flat)](https://travis-ci.org/JasonDraem/XYUIKit-Swift)
+[![CI Status](https://img.shields.io/travis/CoderXXY/XYUIKit-Swift.svg?style=flat)](https://travis-ci.org/CoderXXY/XYUIKit-Swift)
 [![Version](https://img.shields.io/cocoapods/v/XYUIKit-Swift.svg?style=flat)](https://cocoapods.org/pods/XYUIKit-Swift)
 [![License](https://img.shields.io/cocoapods/l/XYUIKit-Swift.svg?style=flat)](https://cocoapods.org/pods/XYUIKit-Swift)
 [![Platform](https://img.shields.io/cocoapods/p/XYUIKit-Swift.svg?style=flat)](https://cocoapods.org/pods/XYUIKit-Swift)
@@ -22,7 +22,7 @@ pod 'XYUIKit-Swift'
 
 ## Author
 
-JasonDraem, coderxxy@163.com
+coderXXY, coderxxy@163.com
 
 ## License
 

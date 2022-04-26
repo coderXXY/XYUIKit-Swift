@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import XYUIKit_Swift
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        UIColor.xy.hexStringToColor(hexString: <#T##String#>, alpha: <#T##CGFloat#>)
+//        XYUILable.init(frame: <#T##CGRect#>)
+//        var lable:XYUILable = XYUILable.init(frame: <#T##CGRect#>, title: <#T##String?#>, bgColor: <#T##UIColor?#>, fontValue: <#T##CGFloat?#>, textColor: <#T##UIColor?#>)
+//        UIColor.xy.titaniumColor
+//        UIColor.xy.hexStringToColor(hexString: <#T##String#>)
     }
 
     override func didReceiveMemoryWarning() {

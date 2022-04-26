@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XYUIKit-Swift'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of XYUIKit-Swift.'
+  s.version          = '0.0.1'
+  s.summary          = '👍👍👍 An easy way to make basic-ui-controls with XYUIKit-Swift.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,20 +18,20 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  对基础控件进行封装，方便快速便捷创建UI。平时项目中经常使用到的基础UI或者工具，为了方便自己与大家，一起来管理吧。。。join us！👍👍👍 Encapsulate basic controls for quick and easy UI creation. Usually used in the project of the basic UI, in order to facilitate their own and everyone, together to manage it... Join us!
                        DESC
 
-  s.homepage         = 'https://github.com/JasonDraem/XYUIKit-Swift'
+  s.homepage         = 'https://github.com/s.requires_arc = true/XYUIKit-Swift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'JasonDraem' => 'coderxxy@163.com' }
-  s.source           = { :git => 'https://github.com/JasonDraem/XYUIKit-Swift.git', :tag => s.version.to_s }
+  s.author           = { 'coderXXY' => 'coderxxy@163.com' }
+  s.source           = { :git => 'https://github.com/CoderXXY/XYUIKit-Swift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'XYUIKit-Swift/Classes/**/*'
-  
+  s.source_files = 'XYUIKit-Swift/Classes/*'
+  s.requires_arc = true
   # s.resource_bundles = {
   #   'XYUIKit-Swift' => ['XYUIKit-Swift/Assets/*.png']
   # }
