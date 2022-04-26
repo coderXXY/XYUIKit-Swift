@@ -19,6 +19,10 @@ class ViewController: UIViewController {
 //        var lable:XYUILable = XYUILable.init(frame: <#T##CGRect#>, title: <#T##String?#>, bgColor: <#T##UIColor?#>, fontValue: <#T##CGFloat?#>, textColor: <#T##UIColor?#>)
 //        UIColor.xy.titaniumColor
 //        UIColor.xy.hexStringToColor(hexString: <#T##String#>)
+//        String.xy.getStringSize(string: <#T##String#>)
+//        String.xy.getStringSize(string: <#T##String#>, fontValue: <#T##CGFloat#>)
+//        String.xy.stringSize(string: <#T##String#>)
+//        String.xy.stringSize(string: <#T##String#>, fontValue: <#T##CGFloat#>, weight: <#T##CGFloat#>)
     }
 
     override func didReceiveMemoryWarning() {
