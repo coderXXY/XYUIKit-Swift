@@ -1,4 +1,4 @@
-# XYUIKit-Swift
+# XYUIKit-Swift for Swift
 
 [![CI Status](https://img.shields.io/travis/CoderXXY/XYUIKit-Swift.svg?style=flat)](https://travis-ci.org/CoderXXY/XYUIKit-Swift)
 [![Version](https://img.shields.io/cocoapods/v/XYUIKit-Swift.svg?style=flat)](https://cocoapods.org/pods/XYUIKit-Swift)
