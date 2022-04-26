@@ -14,7 +14,7 @@ extension XYUIKitBase where Base == String{
     /// - Parameter fontValue: string font-value,if you putin font-value is zero, default is 15.0
     /// - Returns: the size of current content
     @discardableResult
-    public static func getStringSize(string:String, fontValue:CGFloat) -> CGSize {
+    public static func getStringSize(string:String, fontValue:CGFloat = 15.0) -> CGSize {
         let str = string as NSString
         var strSize:CGSize = CGSize(width: 0.0, height: 0.0)
         if str.length <= 0 { return strSize }
@@ -30,7 +30,7 @@ extension XYUIKitBase where Base == String{
     /// - Parameter weight: font-weight（0.0 - 1.0）
     /// - Returns: the size of current content
     @discardableResult
-    public static func stringSize(string:String, fontValue:CGFloat, weight:CGFloat) -> CGSize {
+    public static func stringSize(string:String, fontValue:CGFloat = 15.0, weight:CGFloat = 0.0) -> CGSize {
         var tempFontValue:CGFloat?
         var tempWight:CGFloat?
         /** font */
