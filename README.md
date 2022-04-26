@@ -5,12 +5,23 @@
 [![License](https://img.shields.io/cocoapods/l/XYUIKit-Swift.svg?style=flat)](https://cocoapods.org/pods/XYUIKit-Swift)
 [![Platform](https://img.shields.io/cocoapods/p/XYUIKit-Swift.svg?style=flat)](https://cocoapods.org/pods/XYUIKit-Swift)
 
+## A part of API for XYUIKit-Swift 
+##String
+```
+/// Calculate size based on the contents of the string
+### public static func getStringSize(string:String) -> CGSize {}
+### public static func getStringSize(string:String, fontValue:CGFloat = 15.0) -> CGSize{}
+/// Calculate size based on the contents of the string
+### public static func stringSize(string:String) -> CGSize {}
+### public static func stringSize(string:String, fontValue:CGFloat = 15.0, weight:CGFloat = 0.0) -> CGSize {}
+
+```
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ```
-You should import XYUIKit_Swift in your file.
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -21,13 +32,16 @@ class ViewController: UIViewController {
 //        var lable:XYUILable = XYUILable.init(frame: CGRect, title: String?, bgColor: UIColor?, fontValue: CGFloat?, textColor: UIColor?)
 //        UIColor.xy.titaniumColor
 //        UIColor.xy.hexStringToColor(hexString: String)
+//        String.xy.getStringSize(string: String)
+//        String.xy.getStringSize(string: String, fontValue: CGFloat)
+//        String.xy.stringSize(string: String)
+//        String.xy.stringSize(string: String, fontValue: CGFloat, weight: CGFloat)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
 
 
