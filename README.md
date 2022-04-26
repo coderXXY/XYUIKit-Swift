@@ -9,6 +9,29 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+```
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+//        UIColor.xy.hexStringToColor(hexString: <#T##String#>, alpha: <#T##CGFloat#>)
+//        XYUILable.init(frame: <#T##CGRect#>)
+//        var lable:XYUILable = XYUILable.init(frame: <#T##CGRect#>, title: <#T##String?#>, bgColor: <#T##UIColor?#>, fontValue: <#T##CGFloat?#>, textColor: <#T##UIColor?#>)
+//        UIColor.xy.titaniumColor
+//        UIColor.xy.hexStringToColor(hexString: <#T##String#>)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+}
+
+
+```
+
 ## Requirements
 
 ## Installation
