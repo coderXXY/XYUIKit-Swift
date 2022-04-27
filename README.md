@@ -8,7 +8,7 @@
 ## A part of API for XYUIKit-Swift 
 
 ## StringExtension
-```
+```swift
 /// Calculate size based on the contents of the string
  public static func getStringSize(string:String) -> CGSize {}
  public static func getStringSize(string:String, fontValue:CGFloat = 15.0) -> CGSize{}
@@ -17,26 +17,27 @@
  public static func stringSize(string:String, fontValue:CGFloat = 15.0, weight:CGFloat = 0.0) -> CGSize {}
 ```
 ## UIColorExtension
-```
+```swift
 public static func hexStringToColor(hexString:String) -> UIColor{}
 public static func hexStringToColor(hexString:String, alpha:CGFloat = 1.0) -> UIColor{}
 public static func hexIntToColor(hexInt:Int) -> UIColor{}
 public static func hexIntToColor(hexInt:Int, alpha:CGFloat = 1.0) -> UIColor{}
-
+```
+***部分个性化颜色***
+```
 /** 钛白色 */
-public static var titaniumColor:UIColor?{}
+titaniumColor
 /** 亮白 */
-public static var lightWhiteColor:UIColor?{}
+lightWhiteColor
 /** 皇家蓝 */
-public static var royalBlueColor:UIColor?{}
+royalBlueColor
 /** 背景占位色 */
-public static var backgroundPlaceholderColor:UIColor?{}
+backgroundPlaceholderColor
 /** 字体灰 */
-public static var fontGrayColor:UIColor?{}
-...
+fontGrayColor
 ```
 ## XYUIKit
-```
+```swift
 public static func button(bgColor:UIColor?,
                                 title:String?,
                                 titleColor:UIColor?,
@@ -57,31 +58,32 @@ public static func button(bgColor:UIColor?,
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-```
+```swift
+import XYUIKit_Swift
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-//        UIColor.xy.hexStringToColor(hexString: String, alpha: CGFloat)
-//        XYUILable.init(frame: CGRect)
-//        var lable:XYUILable = XYUILable.init(frame: CGRect, title: String?, bgColor: UIColor?, fontValue: CGFloat?, textColor: UIColor?)
-//        UIColor.xy.titaniumColor
-//        UIColor.xy.hexStringToColor(hexString: String)
-//        String.xy.getStringSize(string: String)
-//        String.xy.getStringSize(string: String, fontValue: CGFloat)
-//        String.xy.stringSize(string: String)
-//        String.xy.stringSize(string: String, fontValue: CGFloat, weight: CGFloat)
+        /** the label UI-control of XYUILable, it extends UIControl,and you can add target for label */
+        let lable:XYUILable = XYUILable.init(frame: CGRect(x: 100, y: 50, width: view.bounds.size.width/3, height: 30), title: "XYUILable-01", bgColor: UIColor.xy.royalBlueColor, fontValue: 20, textColor: UIColor.xy.titaniumColor)
+        lable.textAlignment = .center
+        lable.addTarget(self, action: #selector(labelHandle), for: .touchUpInside)
+        view.addSubview(lable)
+        /** the label UI-control of XYUIKit */
+        let lable01 = XYUIKit.label(bgColor: UIColor.xy.hexStringToColor(hexString: "#AE0000"), title: "XYUILable-02", titleColor: UIColor.xy.titaniumColor, font: UIFont.xy.font(size: 20, weight: 0.2), textAlignment: .center)
+        /** you can get the size with stringSize, but you must set the font-value and font-weight is the same of  lable01, example the fontValue is 20,and the font-weight is 0.2. */
+        let lable01Size:CGSize = String.xy.stringSize(string: "XYUILable-02", fontValue: 20, weight: 0.2)
+        lable01.frame = CGRect(x: 100, y: 50+lable01Size.height+10, width: lable01Size.width+0.5, height: lable01Size.height)
+        view.addSubview(lable01)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    /** the objc action */
+    @objc func labelHandle() {
+        print("the action of XYUILable-01")
     }
 }
-
-
 ```
+![WechatIMG26](https://user-images.githubusercontent.com/16486815/165531602-0e47d219-2d0b-461a-b535-f2916d6140f4.png)
 
 ## Requirements
 
