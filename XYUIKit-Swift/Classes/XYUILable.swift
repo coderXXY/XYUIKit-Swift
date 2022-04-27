@@ -39,9 +39,10 @@ public class XYUILable: UIControl {
     private var _bgColor:UIColor?
     private var _fontValue:CGFloat?
     private var _textColor:UIColor?
+    private var _textAlignment:NSTextAlignment?
 }
 
-extension XYUILable{
+public extension XYUILable{
 //    // MARK: 添加计算属性
     var title:String?{
         set{
@@ -71,5 +72,12 @@ extension XYUILable{
             label?.textColor = _textColor
         }
     }
-
+    
+    var textAlignment: NSTextAlignment? {
+        get { _textAlignment }
+        set {
+            _textAlignment = newValue
+            label?.textAlignment = _textAlignment ?? .center
+        }
+    }
 }
