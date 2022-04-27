@@ -57,6 +57,10 @@ public static func button(bgColor:UIColor?,
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+* Installation with CocoaPods：`pod 'XYUIKit-Swift'`
+* Installation with [Carthage](https://github.com/Carthage/Carthage)：`github "CoderXXY/XYUIKit-Swift"`
+* Manual import：
+    * Import the main file：`#import "XYUIKit_Swift"`
 
 ```swift
 import XYUIKit_Swift
