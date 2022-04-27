@@ -38,7 +38,7 @@ extension XYCompatible{
 extension CGRect:XYCompatible{}
 extension XYUIKitBase where Base == CGRect{
     // 添加计算属性
-    internal static var cgRectZero:CGRect {
+    public static var cgRectZero:CGRect {
         return CGRect(origin: CGPoint.zero, size: CGSize.zero)
     }
 }
@@ -46,11 +46,11 @@ extension XYUIKitBase where Base == CGRect{
 extension UIFont:XYCompatible{}
 extension XYUIKitBase where Base == UIFont{
     // size
-    internal static func font(size:CGFloat) -> UIFont {
+    public static func font(size:CGFloat) -> UIFont {
         return font(size: size, weight: 0.0)
     }
     // size weight
-    internal static func font(size:CGFloat, weight:CGFloat) -> UIFont {
+    public static func font(size:CGFloat, weight: CGFloat=0.0) -> UIFont {
         return UIFont.systemFont(ofSize: size, weight: UIFont.Weight(rawValue: weight))
     }
 }
