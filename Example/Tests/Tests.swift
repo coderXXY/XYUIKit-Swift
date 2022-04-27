@@ -1,5 +1,5 @@
 import XCTest
-import XYUIKit-Swift
+import XYUIKit_Swift
 
 class Tests: XCTestCase {
     
