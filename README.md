@@ -22,19 +22,19 @@ public static func hexStringToColor(hexString:String) -> UIColor{}
 public static func hexStringToColor(hexString:String, alpha:CGFloat = 1.0) -> UIColor{}
 public static func hexIntToColor(hexInt:Int) -> UIColor{}
 public static func hexIntToColor(hexInt:Int, alpha:CGFloat = 1.0) -> UIColor{}
-
-/** 钛白色 */
-public static var titaniumColor:UIColor?{}
-/** 亮白 */
-public static var lightWhiteColor:UIColor?{}
-/** 皇家蓝 */
-public static var royalBlueColor:UIColor?{}
-/** 背景占位色 */
-public static var backgroundPlaceholderColor:UIColor?{}
-/** 字体灰 */
-public static var fontGrayColor:UIColor?{}
-...
 ```
+***部分个性化颜色***
+/** 钛白色 */
+titaniumColor
+/** 亮白 */
+lightWhiteColor
+/** 皇家蓝 */
+royalBlueColor
+/** 背景占位色 */
+backgroundPlaceholderColor
+/** 字体灰 */
+fontGrayColor
+...
 ## XYUIKit
 ```
 public static func button(bgColor:UIColor?,
