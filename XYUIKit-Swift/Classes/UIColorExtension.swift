@@ -30,7 +30,7 @@ extension XYUIKitBase where Base == UIColor{
     /// - Parameters:
     /// - hexInt : 16进制 Int 颜色 0x999999
     /// - alpha : 透明度
-    /// - Returns : return UIcolor
+    /// - Returns : return UIcolor `     
     @discardableResult
     public static func hexIntToColor(hexInt:Int, alpha:CGFloat = 1.0) -> UIColor{
         let redComponet: Float = Float(hexInt >> 16)
