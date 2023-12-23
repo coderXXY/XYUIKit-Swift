@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - XYUIKit-Swift (0.0.1)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase (~> 2.1.4)
+  - XYUIKit-Swift (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  XYUIKit-Swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  XYUIKit-Swift: d6d03ccf3e212181c390207d7774934c0ce1435a
+
+PODFILE CHECKSUM: e18b02b6ceb5da341736b8e527604ff91cea4895
+
+COCOAPODS: 1.11.3
