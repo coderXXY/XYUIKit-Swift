@@ -41,29 +41,6 @@ public class XYCommonService: NSObject {
         return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a);
     }
 }
-/** (Swift) 监听应用程序前台后台及非活跃状态 */
-public class AppStateManager {
-    public static func xyRegisterAppStateManager() {
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplicationDidBecomeActive, object: nil, queue: nil, using: handleApplicationState)
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplicationWillResignActive, object: nil, queue: nil, using: handleApplicationState)
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplicationDidEnterBackground, object: nil, queue: nil, using: handleApplicationState)
-    }
-    // MARK: 监听通知方法
-    private static func handleApplicationState(notification: Notification) {
-        if let application = notification.object as? UIApplication {
-            switch application.applicationState {
-            case .active:
-                print("state == active")
-            case .inactive:
-                print("state == inactive")
-            case .background:
-                print("state == background")
-            @unknown default: break
-            }
-        }
-    }
-    private init() { }
-}
 
 // MARK: Swift版本，以下RxSwift中的方式:
 /** 判断当前执行的上下文中是否存在关联key的值，该key只设定在主队列的上下文中 */
