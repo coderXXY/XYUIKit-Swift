@@ -9,7 +9,7 @@ import UIKit
 /** 通用方法 */
 public class XYCommonService: NSObject {
     /** debug log */
-    func print(_ items: String..., filename: String = #file, function : String = #function, line: Int = #line, separator: String = " ", terminator: String = "\n") {
+    func XYDebugPrint(_ items: String..., filename: String = #file, function : String = #function, line: Int = #line, separator: String = " ", terminator: String = "\n") {
 #if DEBUG
         let pretty = "===### \(URL(fileURLWithPath: filename).lastPathComponent) [#\(line)] \(function) ###=== \n"
         let output = items.map { "\($0)" }.joined(separator: separator)
