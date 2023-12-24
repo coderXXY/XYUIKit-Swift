@@ -9,7 +9,7 @@ import UIKit
 /** 通用方法 */
 public class XYCommonService: NSObject {
     /** debug log */
-    static func XYDLog(_ items: String..., filename: String = #file, function : String = #function, line: Int = #line, separator: String = " ", terminator: String = "\n") {
+    public static func XYDLog(_ items: String..., filename: String = #file, function : String = #function, line: Int = #line, separator: String = " ", terminator: String = "\n") {
 #if DEBUG
         let pretty = "===### \(URL(fileURLWithPath: filename).lastPathComponent) [#\(line)] \(function) ###=== \n"
         let output = items.map { "\($0)" }.joined(separator: separator)
@@ -17,7 +17,7 @@ public class XYCommonService: NSObject {
 #endif
     }
     /** iOS应用程序的状态 [active\inactive\background] */
-    func xyApplicationState() -> UIApplication.State {
+    public static func xyApplicationState() -> UIApplication.State {
         if Thread.isMainThread {
             return UIApplication.shared.applicationState
         } else {
@@ -29,15 +29,15 @@ public class XYCommonService: NSObject {
         }
     }
     /** width-accounding to view cout size */
-    func xyScreen_width(obj:UIView) -> CGFloat {
+    public static func xyScreen_width(obj:UIView) -> CGFloat {
         return obj.frame.size.width;
     }
     /** height-accounding to view cout size */
-    func xyScreen_height(obj:UIView) -> CGFloat {
+    public static func xyScreen_height(obj:UIView) -> CGFloat {
         return obj.frame.size.height;
     }
     /** set subview or view backgroundColor, r、g、b [0~255.0], a[0~1.0] */
-    func xyBGColor(r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
+    public static func xyBGColor(r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
         return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a);
     }
 }
