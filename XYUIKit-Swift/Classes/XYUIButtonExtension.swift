@@ -10,7 +10,7 @@ import UIKit
 /*
  枚举 设置 图片的位置
  */
-enum XYButtonImagePosition : Int  {
+public enum XYButtonImagePosition : Int  {
     case imageTop = 0
     case imageLeft
     case imageBottom
@@ -19,7 +19,7 @@ enum XYButtonImagePosition : Int  {
 
 //extension UIButton:XYCompatible{}
 //extension XYUIKitBase where Base == UIButton{
-extension UIButton {
+public extension UIButton {
     /**
      type ：image 的位置
      Space ：图片文字之间的间距
