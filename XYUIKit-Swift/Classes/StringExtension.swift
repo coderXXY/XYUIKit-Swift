@@ -53,4 +53,16 @@ extension XYUIKitBase where Base == String{
         strSize = rect.size
         return strSize
     }
+    /** limitSize */
+    public static func limitSize(content: String, fontValue: CGFloat = 15.0, weight: CGFloat = 0.0, size: CGSize) -> CGSize{
+        let str = content as NSString
+        /** if content is empty or nil, will return CGZero */
+        var strSize:CGSize = CGSizeZero//CGSize(width: 0, height: 0)
+        if str.length <= 0{ return strSize }
+//        let size:CGSize = CGSize.init(width: CGFloat(MAXFLOAT), height: CGFloat(MAXFLOAT))
+        let attributes = [NSAttributedString.Key.font:UIFont.systemFont(ofSize: fontValue, weight: UIFont.Weight(rawValue: weight))];
+        let rect:CGRect = str.boundingRect(with: size, options: [NSStringDrawingOptions.usesLineFragmentOrigin], attributes: attributes, context: nil)
+        strSize = rect.size
+        return strSize
+    }
 }
