@@ -56,3 +56,35 @@ extension DispatchQueue {
         DispatchQueue.getSpecific(key: token) != nil
     }
 }
+// MARK: XYCommonService EXTENSION
+extension XYCommonService{
+    /** curAppWindow */
+    public func curAppWindow() -> UIWindow{
+        let appWindow = UIApplication.shared.delegate?.window
+        return appWindow!!
+    }
+    /** find current controller */
+    public func currentVc() -> UIViewController{
+        let rootVc = self.curAppWindow().rootViewController
+        let currentVc = currentVcFrom(rootVc!)
+        return currentVc
+    }
+    // MARK: current controller
+    private func currentVcFrom(_ rootVc:UIViewController) -> UIViewController{
+        var currentVc:UIViewController
+        var rootCtr = rootVc
+        if(rootCtr.presentedViewController != nil) {
+            rootCtr = rootVc.presentedViewController!
+        }
+        if rootVc.isKind(of:UITabBarController.classForCoder()) {
+            currentVc = currentVcFrom((rootVc as! UITabBarController).selectedViewController!)
+        }
+        else if rootVc.isKind(of:UINavigationController.classForCoder()){
+            currentVc = currentVcFrom((rootVc as! UINavigationController).visibleViewController!)
+        }
+        else{
+            currentVc = rootCtr
+        }
+        return currentVc
+    }
+}
